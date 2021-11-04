@@ -71,4 +71,20 @@ describe('App', () => {
 
     expect(nextStep.props.children).toEqual(`2 / ${maxQuestions}`);
   });
+
+  it('should remove half of incorrect answers after help used', async () => {
+    const { findAllByTestId, getByTestId } = render(<App />);
+
+    const buttons = await findAllByTestId(/answer-[0-9]/);
+
+    expect(buttons).toHaveLength(4);
+
+    const helpButton = getByTestId('thanos');
+
+    fireEvent.press(helpButton);
+    fireEvent.press(helpButton);
+
+    const remainingBUttons = await findAllByTestId(/answer-[0-9]/);
+    expect(remainingBUttons).toHaveLength(2);
+  });
 });

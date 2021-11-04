@@ -19,6 +19,8 @@ const props: IProps = {
   questions: [],
   handleAnswerSelected: jest.fn(),
   onResetGame: jest.fn(),
+  isLifeLineUsed: false,
+  setIsLifeLineUsed: jest.fn(),
 };
 
 describe('Game', () => {
