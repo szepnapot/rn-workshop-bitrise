@@ -55,7 +55,7 @@ const Game = ({
       );
       setIsLifeLineUsed(true);
     }
-  }, [currentQuestion]);
+  }, [currentQuestion, isLifeLineUsed]);
 
   return (
     <>
