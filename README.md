@@ -21,8 +21,4 @@ yarn test
 yarn test:watch
 ```
 
-
 Workshop
-
-CHANGE FOR PR
-
