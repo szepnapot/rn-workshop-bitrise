@@ -4,6 +4,14 @@ import { Game } from '../screens';
 import { IProps } from '../screens/Game';
 import { IQuiz } from '../interfaces';
 
+jest.mock('../utils/helpers', () => {
+  const og = jest.requireActual('../utils/helpers');
+  return {
+    ...og,
+    shuffle: jest.fn((arr) => arr),
+  };
+});
+
 const props: IProps = {
   currentIndex: 0,
   isLoading: false,

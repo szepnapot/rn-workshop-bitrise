@@ -828,7 +828,7 @@ Array [
             ]
           }
         >
-          No
+          YES
         </Text>
       </View>
       <View
@@ -869,7 +869,7 @@ Array [
             ]
           }
         >
-          YES
+          No
         </Text>
       </View>
       <View
@@ -910,7 +910,7 @@ Array [
             ]
           }
         >
-          Maybe
+          Not really
         </Text>
       </View>
       <View
@@ -951,7 +951,7 @@ Array [
             ]
           }
         >
-          Not really
+          Maybe
         </Text>
       </View>
     </View>
